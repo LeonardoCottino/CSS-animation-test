@@ -1,0 +1,103 @@
+body{
+
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+                      
+    }
+    .faccia{
+        background-color: rgb(254, 254, 34);
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        position: relative;
+        margin: 20px auto;
+
+        .bocca{
+            height: 15px;
+            width: 60px;
+            position: relative;
+            top: 100px;
+            left: 110px;
+            background-color: black;
+            border-radius: 0 15px 40px 30px;
+            padding: 10px;
+
+            animation: sorriso 5s cubic-bezier(0.77,-0.11, 0.26, 1.27) forwards infinite alternate;
+            @keyframes sorriso {
+                100%{width: 110px;
+                    left:90px;
+                    height: 30px;
+                }
+            }
+        }
+        .occhiodx,.occhiosx{
+            height: 60px;
+            width: 20px;
+            background-color: black;
+            position: relative;
+            border-radius: 20px;
+            animation: occhi 5s cubic-bezier(0.77,-0.11, 0.26, 1.27) forwards infinite alternate;
+            @keyframes occhi {
+                100%{
+                    transform: scale(70%);                   
+                }}
+        }
+        .occhiosx{    
+            left: 100px;
+            top: 60px;
+        }
+        .occhiodx{
+            left: 180px;
+            top: 120px;
+        }
+        .sopraccigliasx{
+            top: -60px;
+            left: 90px;
+            border-radius: 20px 10px 10px 0;
+            animation: sopraccigliasx 5s cubic-bezier(0.77,-0.11, 0.26, 1.27) forwards infinite alternate;
+            @keyframes sopraccigliasx {
+                100%{
+                    transform: scale(80%); 
+                    top: -100px;
+                }}
+        }
+        .sopraccigliadx{
+            top: -70px;
+            left: 170px;
+            border-radius: 20px 30px 10px 0px;
+            animation: sopraccigliadx 5s cubic-bezier(0.77,-0.11, 0.26, 1.27) forwards infinite alternate;
+            @keyframes sopraccigliadx {
+                100%{
+                    transform: scale(80%); 
+                    top: -110px;
+                }}
+        }
+        .sopraccigliasx,.sopraccigliadx{
+            background-color: black;
+            height: 10px;
+            position: relative;
+            width: 40px;
+        }
+
+    }
+    .wow{
+        h1{
+            font-size: 10px;
+            color: white;
+            animation: h1 5s cubic-bezier(0.77,-0.11, 0.26, 1.27) forwards infinite alternate;
+            @keyframes h1 {
+                100%{
+                    transform: scale(400%); 
+                    top: -110px;
+                    color: rgb(242, 13, 13);
+                }
+                50%{
+                    color: black;
+                }
+            }
+        }
+    }
+    
+}
